@@ -1,0 +1,158 @@
+@import './slideFirst';
+@import './slideSecond';
+@import './slideThird';
+
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+    // cursor: grabbing;
+}
+
+.slider-inner {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    // width: 300%;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat((3, 1fr));
+    transition: left 1s ease;
+
+    .slide {
+        width: 100vw;
+        height: 100%;
+        overflow: hidden;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+
+        &-block {
+            position: relative;
+            z-index: 2;
+            padding-left: $mainLeftIndent;
+            padding-right: $mainRightIndent;
+            padding-top: 10rem;
+            height: 90%;
+
+            &__content {
+                h1 {
+                    text-transform: uppercase;
+                    margin: 0;
+                    font-family: GilroyUltraLight;
+                    font-size: 6rem;
+                    letter-spacing: 0.3rem;
+
+                    span {
+                        font-family: GilroyBold !important;
+
+                    }
+                }
+            }
+
+            &__title {
+                max-width: 12rem;
+
+                h4 {
+                    text-transform: uppercase;
+                    margin: 0;
+                    font-family: GilroyUltraLight;
+                    letter-spacing: 0.1rem;
+                    font-size: 1.5rem;
+                }
+
+
+            }
+        }
+
+        &-parallax {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+
+            .parralax-element {
+                position: absolute;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                // z-index: -43;
+            }
+        }
+
+
+        button.slide-btn {
+            background: #ff6a9f;
+            outline: none;
+            border: none;
+
+            padding: 1.4rem 2.2rem;
+            ;
+            border-radius: 3rem;
+
+            p {
+                font-family: Gilroy;
+                font-size: 1.6rem;
+                margin: 0;
+
+                &::before {
+                    content: "";
+
+                    position: relative;
+                    left: -2px;
+
+                    float: left;
+                    width: 2rem;
+                    height: 2rem;
+                    margin-right: 5px;
+                    background: url(../../../../img/arrow2.png) no-repeat;
+                    background-size: 10;
+                    background-position: center;
+
+                    // color: white;
+                    border-radius: 50%;
+                    // padding: 0.5rem;
+
+                }
+            }
+        }
+    }
+}
+
+// .slider-inner {
+//     z-index: 3;
+//     display: flex;
+//     position: relative;
+//     top: 0;
+//     left: 0;
+//     height: 100%;
+//     width: 300%;
+//     // display: grid;
+//     // grid-template-columns: repeat((3, 1fr));
+//     // gap: 5px;
+//     pointer-events: none;
+//     transition: 0s ease-in;
+//     z-index: 2;
+// }
+
+// .slide {
+//     height: 100%;
+//     width: 100vw;
+//     overflow: hidden;
+
+
+
+//         &__content {
+//             height: 100%;
+//             overflow: hidden;
+//         }
+
+//     }
+
+
+// }

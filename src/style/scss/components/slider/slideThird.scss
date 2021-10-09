@@ -1,0 +1,152 @@
+.slide-third {
+    background-image: url(../../../../img/bg3.png);
+    position: relative;
+
+    &__fade {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.4);
+
+        &-true {
+            display: block;
+        }
+
+        &-false {
+            display: none;
+        }
+    }
+
+    &__bottle {
+        position: absolute;
+        background: url(../../../../img/bottle2.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        width: 20rem;
+        z-index: 3;
+    }
+
+    &__content {
+        // !!!!
+        position: relative;
+    }
+
+    &__modal {
+        position: absolute;
+        background: white;
+        top: 0;
+        right: 0;
+        width: 95%;
+        height: 100%;
+        z-index: 2;
+        border-radius: 3rem;
+
+        &-true {
+            display: block;
+        }
+
+        &-false {
+            display: none;
+        }
+
+        .modal-content {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            // z-index: 0;
+
+            &__close {
+                position: absolute;
+                top: 2rem;
+                right: 2rem;
+
+                img {
+                    width: 2.5rem;
+                }
+            }
+
+            &__title {
+                max-width: 100% !important;
+                margin-left: 25%;
+
+                h4 {
+                    text-transform: uppercase;
+                    margin: 0;
+                    font-family: GilroyUltraLight;
+                    letter-spacing: 0.1rem;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+
+    &__title {
+        max-width: 100% !important;
+        margin-left: 25%;
+    }
+
+    &__widgets {
+
+        display: flex;
+        // height: 100%;
+        margin-top: 4rem;
+
+        .widgets-col {
+            width: 30%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            &:first-child {
+                width: 70%;
+
+                .slide-third__widget {
+                    padding-left: 40%;
+                    padding-right: 5rem;
+
+                }
+
+            }
+
+            &:not(:last-child) {
+                margin-right: 2rem;
+            }
+        }
+    }
+
+    &__widget {
+        position: relative;
+        background: #ffffff;
+        border-radius: 2.5rem;
+        padding: 2.5rem;
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+
+
+        img {
+            position: absolute;
+            width: 4.5rem;
+            top: -2rem;
+        }
+
+        .widget-content {
+            p {
+                margin: 0;
+                font-family: $fontLight;
+                font-size: 1.5rem;
+                line-height: 1.3;
+                // letter-spacing: 0.3rem;
+            }
+
+        }
+
+        &-first {
+            // height: 100%;
+        }
+    }
+
+}

@@ -1,0 +1,65 @@
+.slide-second {
+    background-image: url(../../../../img/bg2.png);
+
+
+    &__content {
+        display: flex;
+        height: 100%;
+        padding-top: 2rem;
+
+        .slide-scroll {
+            height: 100%;
+            position: relative;
+
+            &__bar {
+                height: 90%;
+                width: 5px;
+                background: #000;
+                border-radius: 5px;
+            }
+
+            &__slider {
+                position: absolute;
+                z-index: 10;
+                top: 0;
+                left: -8px;
+                height: 104px;
+                width: 20px;
+                background: url(../../../../img/btn.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+    }
+
+    &__message {
+        background: white;
+        padding: 1.5rem;
+        margin-left: 2.5rem;
+        max-width: 85%;
+        height: 90%;
+        border-radius: 2rem;
+        overflow: hidden;
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+
+        .message__content {
+            height: 100%;
+            overflow: scroll;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+
+
+            p {
+                font-size: 1.3rem;
+                font-family: $font;
+                letter-spacing: 0.1rem;
+                line-height: 1.3
+            }
+        }
+
+    }
+
+}

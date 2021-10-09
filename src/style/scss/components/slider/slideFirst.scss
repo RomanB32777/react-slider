@@ -1,0 +1,95 @@
+.slide-first {
+    background-image: url(../../../../img/bg.png);
+
+    &__parallax {
+
+        .parralax1 {
+            background-image: url(../../../../img/pink_sperm_1.png);
+            width: 42rem;
+            height: 6.5rem;
+            left: 40%;
+            top: 18%;
+            z-index: 3;
+        }
+
+        .parralax2 {
+            background-image: url(../../../../img/Layer8.png);
+            width: 7rem;
+            height: 7rem;
+            right: 5%;
+            top: 25%;
+        }
+
+        .parralax3 {
+            background-image: url(../../../../img/Layer7.png);
+            width: 7rem;
+            height: 7rem;
+            left: 0%;
+            top: 10%;
+        }
+
+        .parralax4 {
+            background-image: url(../../../../img/Layer5.png);
+            width: 62.5px;
+            height: 57px;
+            right: 20%;
+            top: 5%;
+        }
+
+        .parralax5 {
+            background-image: url(../../../../img/Layer4.png);
+            width: 12rem;
+            height: 7rem;
+            right: 30%;
+            bottom: 0%;
+        }
+
+        .parralax6 {
+            background-image: url(../../../../img/Layer4copy.png);
+            width: 5rem;
+            height: 5rem;
+            left: 30%;
+            bottom: 5%;
+        }
+
+        .parralax7 {
+            background-image: url(../../../../img/Layer4copy2.png);
+            width: 5rem;
+            height: 5rem;
+            right: 2%;
+            top: 2%;
+        }
+
+        .parralax8 {
+            background-image: url(../../../../img/bakti_1.png);
+            width: 4rem;
+            height: 4rem;
+            left: 5%;
+            bottom: 27%;
+            // z-index: -1;
+        }
+
+        .parralax9 {
+            background-image: url(../../../../img/pink_sperm.png);
+            width: 12rem;
+            height: 8rem;
+            left: 0%;
+            bottom: 2%;
+        }
+
+    }
+
+    &__content {
+        position: relative;
+
+
+    }
+
+    &__button {
+
+        position: absolute;
+        bottom: 5%;
+        right: 17%;
+
+    }
+}

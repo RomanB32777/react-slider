@@ -1,0 +1,38 @@
+header {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    padding-left: $mainLeftIndent;
+    padding-top: 1.5rem;
+
+    text-transform: uppercase;
+
+    font-family: Gilroy;
+    letter-spacing: 0.1rem;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+
+    a {
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 1rem;
+
+        img {
+            width: 1rem;
+        }
+    }
+
+    span {
+        height: 1.5rem;
+        border-left: 1px solid #282828;
+    }
+
+    p {
+        margin: 0;
+        margin-left: 1rem;
+
+    }
+}

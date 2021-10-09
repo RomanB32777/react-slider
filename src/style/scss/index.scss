@@ -1,0 +1,12 @@
+@import './fonts';
+@import './vars';
+@import './components/slider/index';
+@import './components/header';
+@import './components/footer';
+
+* {
+    box-sizing: border-box;
+}
+.App {
+    height: 100vh;
+}
