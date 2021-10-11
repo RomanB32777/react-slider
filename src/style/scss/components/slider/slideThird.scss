@@ -2,6 +2,89 @@
     background-image: url(../../../../img/bg3.png);
     position: relative;
 
+    .slide-block {
+        padding-top: calc(#{$mainTopIndent} - 2rem) !important;
+        padding-right: calc(#{$mainRightIndent} + 2.5rem) !important;
+        padding-left: calc(#{$mainLeftIndent} + 2.5rem) !important;
+        // 7.5rem !important;
+
+    }
+
+    &__parallax {
+
+        .parralax1 {
+            background-image: url(../../../../img/1.png);
+            width: 34px;
+            height: 34px;
+            left: 7%;
+            top: 30%;
+            z-index: 1;
+        }
+
+        .parralax2 {
+            background-image: url(../../../../img/2.png);
+            width: 113px;
+            height: 112px;
+            left: 18%;
+            top: 42%;
+            z-index: 2;
+        }
+
+        .parralax3 {
+            background-image: url(../../../../img/3.png);
+            width: 37px;
+            height: 38px;
+            left: 19%;
+            top: 10%;
+            z-index: 1;
+        }
+
+        .parralax4 {
+            background-image: url(../../../../img/4.png);
+            width: 68px;
+            height: 68px;
+            left: 22%;
+            bottom: 13%;
+            z-index: 2;
+        }
+
+        .parralax5 {
+            background-image: url(../../../../img/5.png);
+            width: 68px;
+            height: 69px;
+            left: 17%;
+            top: 20%;
+            z-index: 4;
+        }
+
+        .parralax6 {
+            background-image: url(../../../../img/6.png);
+            width: 142px;
+            height: 65px;
+            left: 18%;
+            bottom: 0;
+            z-index: 4;
+        }
+
+        .parralax7 {
+            background-image: url(../../../../img/7.png);
+            width: 33px;
+            height: 34px;
+            left: 1%;
+            bottom: 33%;
+            z-index: 1;
+        }
+
+        .parralax8 {
+            background-image: url(../../../../img/8.png);
+            width: 75px;
+            height: 75px;
+            left: 2%;
+            bottom: 15%;
+            z-index: 4;
+        }
+    }
+
     &__fade {
         position: absolute;
         top: 0;
@@ -33,17 +116,20 @@
     &__content {
         // !!!!
         position: relative;
+        padding-top: 2rem;
+        height: 100%;
     }
 
     &__modal {
         position: absolute;
         background: white;
         top: 0;
-        right: 0;
-        width: 95%;
+        left: 0;
+        width: 100%;
         height: 100%;
         z-index: 2;
         border-radius: 3rem;
+        padding-top: 2rem;
 
         &-true {
             display: block;
@@ -61,11 +147,11 @@
 
             &__close {
                 position: absolute;
-                top: 2rem;
+                top: 0;
                 right: 2rem;
 
                 img {
-                    width: 2.5rem;
+                    width: 2rem;
                 }
             }
 
@@ -81,6 +167,88 @@
                     font-size: 1.5rem;
                 }
             }
+
+            &__body {
+                padding-left: 25%;
+                padding-right: 20%;
+
+                .modal-slider {
+                    margin-top: 1.5rem;
+                    width: 100%;
+
+                    &__inner {
+                        position: relative;
+                        min-height: 260px;
+                    }
+
+                    .modal-slide {
+                        background: transparent;
+                        position: absolute;
+
+                        &__content {
+
+                            .modal-list {
+
+                                &__item {
+                                    margin-bottom: 1rem;
+
+                                    h4 {
+                                        color: #8cc9e8;
+                                        font-family: $fontBold;
+                                        font-size: 1.5rem;
+                                        margin: 0 0 0.3rem;
+                                    }
+
+                                    p {
+                                        margin: 0;
+                                        font-family: $font;
+                                        font-size: 1.5rem;
+                                        line-height: 1.3;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &__nav {
+                        margin-top: 2.5rem;
+                        display: flex;
+                        justify-content: space-between;
+                        width: 20%;
+
+                        .btn-nav {
+                            display: flex;
+                            align-items: center;
+
+                            img {
+                                width: .6rem;
+                            }
+                        }
+
+                        .dots {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            &-nav {
+                                width: .6rem;
+                                height: .6rem;
+                                border: 1px solid black;
+                                border-radius: 50%;
+
+                                &:not(:last-child) {
+                                    margin-right: .5rem;
+                                }
+
+                                &-active {
+                                    background: $primary;
+                                    border-color: transparent;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 
@@ -92,7 +260,7 @@
     &__widgets {
 
         display: flex;
-        // height: 100%;
+        // max-width: 95%;
         margin-top: 4rem;
 
         .widgets-col {
@@ -124,7 +292,7 @@
         background: #ffffff;
         border-radius: 2.5rem;
         padding: 2.5rem;
-        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+        box-shadow: $shadow;
 
 
         img {
@@ -143,10 +311,5 @@
             }
 
         }
-
-        &-first {
-            // height: 100%;
-        }
     }
-
 }

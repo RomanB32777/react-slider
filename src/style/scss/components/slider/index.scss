@@ -36,7 +36,7 @@
             z-index: 2;
             padding-left: $mainLeftIndent;
             padding-right: $mainRightIndent;
-            padding-top: 10rem;
+            padding-top: $mainTopIndent;
             height: 90%;
 
             &__content {
@@ -85,39 +85,53 @@
             }
         }
 
-
         button.slide-btn {
             background: #ff6a9f;
             outline: none;
             border: none;
-
             padding: 1.4rem 2.2rem;
-            ;
+            box-shadow: $shadow;
             border-radius: 3rem;
+            position: relative;
 
             p {
                 font-family: Gilroy;
-                font-size: 1.6rem;
+                font-size: 1.5rem;
                 margin: 0;
+                padding-left: 2rem;
 
                 &::before {
                     content: "";
-
-                    position: relative;
-                    left: -2px;
-
-                    float: left;
-                    width: 2rem;
-                    height: 2rem;
+                    position: absolute;
+                    left: 15px;
+                    top: 13px;
+                    width: 3rem;
+                    height: 3rem;
                     margin-right: 5px;
-                    background: url(../../../../img/arrow2.png) no-repeat;
-                    background-size: 10;
+                    background-repeat: no-repeat;
                     background-position: center;
-
-                    // color: white;
+                    background-size: 80%;
                     border-radius: 50%;
+                    box-shadow:30px 29px 52px -10px rgba(34, 60, 80, 0.19) inset;
+                    // background: url(../../../../img/btn-arrow.png) no-repeat;
                     // padding: 0.5rem;
 
+                }
+            }
+        }
+
+        button.slide-btn.icon-plus {
+            p {
+                &::before {
+                    background-image: url(../../../../img/btn-plus.png);
+                }
+            }
+        }
+
+        button.slide-btn.icon-arrow {
+            p {
+                &::before {
+                    background-image: url(../../../../img/btn-arrow.png);
                 }
             }
         }

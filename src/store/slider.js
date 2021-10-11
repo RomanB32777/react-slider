@@ -3,11 +3,8 @@ import { makeAutoObservable } from "mobx"
 class SliderStore {
 
     currentSlide = 0
-    // slides = [
-    //     <SlideFirst />,
-    //     <SlideSecond />,
-    // ]
-
+    swipe = true
+   
     constructor() {
         makeAutoObservable(this)
     }
@@ -22,6 +19,10 @@ class SliderStore {
 
     setCurrentSlide(newSlide) {
         this.currentSlide = newSlide
+    }
+
+    setSwipe(flag) {
+        this.swipe = flag
     }
 }
 

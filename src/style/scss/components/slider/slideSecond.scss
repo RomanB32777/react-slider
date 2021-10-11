@@ -1,6 +1,49 @@
 .slide-second {
     background-image: url(../../../../img/bg2.png);
 
+    &__parallax {
+
+        .parralax1 {
+            background-image: url(../../../../img/Layer3copy6.png);
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            z-index: 1;
+        }
+        .parralax2 {
+            background-image: url(../../../../img/Layer3copy2.png);
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            z-index: 1;
+        }
+        .parralax3 {
+            background-image: url(../../../../img/Layer3copy4.png);
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            z-index: 1;
+        }
+        .parralax4 {
+            background-image: url(../../../../img/Layer3copy3.png);
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            z-index: 1;
+        }
+        .parralax5 {
+            background-image: url(../../../../img/Layer3copy5.png);
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            z-index: 1;
+        }
+    }
 
     &__content {
         display: flex;
@@ -41,7 +84,8 @@
         height: 90%;
         border-radius: 2rem;
         overflow: hidden;
-        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+        box-shadow: $shadow;
+        // 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 
         .message__content {
             height: 100%;
@@ -56,7 +100,11 @@
                 font-size: 1.3rem;
                 font-family: $font;
                 letter-spacing: 0.1rem;
-                line-height: 1.3
+                line-height: 1.3;
+
+                span {
+                    font-family: $fontBold;
+                }
             }
         }
 
